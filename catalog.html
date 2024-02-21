@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Седона. Гостиницы</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="header" data-test="header">
@@ -16,7 +17,7 @@
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
@@ -32,7 +33,7 @@
           <li class="navigation-user-item">
             <a class="navigation-user-link navigation-user-link-favorite" href="#">
               <span class="visually-hidden">Избранное</span>
-              <span class="navigation-badge">12</span>
+              <span class="favorite-likes">12</span>
             </a>
           </li>
           <li class="navigation-user-item">
@@ -76,7 +77,7 @@
             </ul>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-group-title">Тип жилья:</legend>
+            <legend class="catalog-filter-group-title">Тип Жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -115,7 +116,7 @@
       <section class="catalog" data-test="catalog">
         <h2 class="visually-hidden">Каталог гостиниц</h2>
         <div class="catalog-control">
-          <h3>Найдено гостиниц: <span>38</span></h3>
+          <h3 class="catalog-title">Найдено гостиниц: <span>38</span></h3>
           <div class="catalog-buttons">
             <select class="select-control" aria-label="Сортировка">
               <option value="popular">Сначала популярные</option>
