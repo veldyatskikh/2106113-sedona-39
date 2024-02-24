@@ -245,6 +245,10 @@ background-color: #7DB54F;
   text-align: center;
 }
 
+.search {
+  text-align: center;
+}
+
 .search-title {
   font-size: 30px;
   font-weight: 700;
@@ -389,6 +393,19 @@ background-color: #7DB54F;
 }
 
 .catalog-filter {
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+
+.catalog-filter-group-left  {
+  width: 371px;
+  display: flex;
+}
+
+.catalog-filter-group-right {
+  width: 550px;
   display: flex;
 }
 
@@ -433,6 +450,9 @@ background-color: #7DB54F;
 }
 
 .catalog-control {
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0;
   display: flex;
 }
 
@@ -441,10 +461,25 @@ background-color: #7DB54F;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+
+  width: 338px;
+  margin-right: 200px;
+}
+
+.catalog-buttons {
+  width: 522px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-control {
+  width: 292px;
 }
 
 .view-buttons {
   list-style: none;
+  width: 160px;
+  display: flex;
 }
 
 .product-list {
@@ -458,12 +493,8 @@ background-color: #7DB54F;
 
 .product-card {
   width: 300px;
-  margin-right: 20px;
+  gap: 20px;
   padding: 20px;
-}
-
-.product-card:last-child {
-  margin-right: 0;
 }
 
 .product-card-link {
