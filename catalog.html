@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Седона. Гостиницы</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/outline.css">
+    <link rel="stylesheet" href="styles/outline-settings.css">
   </head>
   <body>
     <header class="header" data-test="header">
@@ -42,8 +44,9 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner" data-test="main">
-      <section class="filter" data-test="filter">
+    <main class="main-inner main-container" data-test="main">\
+      <div class="page-container">
+        <section class="filter" data-test="filter">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -114,7 +117,7 @@
         </form>
       </section>
       <section class="catalog" data-test="catalog">
-        <h2 class="visually-hidden">Каталог гостиниц</h2>
+        <h2 class="visually-hidden" hidden>Каталог гостиниц</h2>
         <div class="catalog-control">
           <h3 class="catalog-title">Найдено гостиниц: <span>38</span></h3>
           <div class="catalog-buttons">
@@ -248,29 +251,32 @@
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
+      </div>
     </main>
     <footer class="footer" data-test="footer">
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="social-link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="social-link" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-      </ul>
-      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="copyright" href="https://htmlacademy.ru/">
-        <img class="copyright-logo" src="images/htmlacademy-logo.svg" alt="Логотип HTML Academy">
-      </a>
+      <div class="page-footer-container">
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="copyright" href="https://htmlacademy.ru/">
+          <img class="copyright-logo" src="images/htmlacademy-logo.svg" alt="Логотип HTML Academy">
+        </a>
+      </div>
     </footer>
   </body>
 </html>
