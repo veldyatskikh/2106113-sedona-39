@@ -75,17 +75,23 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="pool" checked>Бассейн
+                      <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                      <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="wifi">Wi-Fi
+                      <input class="visually-hidden control-input" type="checkbox" name="wifi">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -95,17 +101,23 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="housing-type" value="hotel" checked>Гостиница
+                      <input class="visually-hidden control-input" type="radio" name="housing-type" value="hotel" checked>
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="housing-type" value="motel">Мотель
+                      <input class="visually-hidden control-input" type="radio" name="housing-type" value="motel">
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="housing-type" value="apartments">Апартаменты
+                      <input class="visually-hidden control-input" type="radio" name="housing-type" value="apartments">
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -114,14 +126,20 @@
             <div class="catalog-filter-group-right">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-group-title">Стоимость, ₽:</legend>
-                <label class="filter-range-control">От <input type="text" name="min-interval" value="0"></label>
-                <label class="filter-range-control">До <input type="text" name="min-interval" value="9000"></label>
-                <button class="filter-range-handle min" type="button">
-                  <span class="visually-hidden">Управление нижней границей стоимости</span>
-                </button>
-                <button class="range-toggle toggle-max" type="button">
-                  <span class="visually-hidden">Управление верхней границей стоимости</span>
-                </button>
+                <div class="range-wrapper-inputs">
+                  <label class="filter-range-control"><span class="label-text">от</span><input class="range-input range-input-min" type="number" name="min-interval" value="0"></label>
+                  <label class="filter-range-control"><span class="label-text">до</span><input class="range-input range-input-max" type="number" name="max-interval" value="9000"></label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 226px;">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Управление нижней границей стоимости</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Управление верхней границей стоимости</span>
+                    </button>
+                  </div>
+                </div>
               </fieldset>
               <div class="catalog-filter-buttons">
                 <button class="catalog-filter-submit" type="submit">Применить</button>
@@ -161,10 +179,10 @@
           </div>
           <ul class="product-list">
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link" href="#" tabindex="-1">
                 <img class="product-card-img" src="images/hotel-1.jpg" width="300" height="212" alt="Звездное небо в расщелине гор">
               </a>
-              <a class="product-card-link" href="#">
+              <a class="product-card-link" href="#" tabindex="-1">
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
               </a>
               <p class="product-card-type">Гостиница</p>
@@ -176,15 +194,15 @@
                 <li class="star active"></li>
                 <li class="star active"></li>
                 <li class="star active"></li>
-                <li class="star"></li>
+                <li class="star visually-hidden"></li>
               </ul>
               <p class="product-card-rating">Рейтинг: <span class="rating">8,5</span></p>
             </li>
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link" href="#" tabindex="-1">
                 <img class="product-card-img" src="images/hotel-2.jpg" width="300" height="212" alt="Радуга над горным хребетом">
               </a>
-              <a class="product-card-link" href="#">
+              <a class="product-card-link" href="#" tabindex="-1">
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
               </a>
               <p class="product-card-type">Гостиница</p>
@@ -196,15 +214,15 @@
                 <li class="star active"></li>
                 <li class="star active"></li>
                 <li class="star active"></li>
-                <li class="star"></li>
+                <li class="star visually-hidden"></li>
               </ul>
               <p class="product-card-rating">Рейтинг: <span class="rating">9,2</span></p>
             </li>
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link" href="#" tabindex="-1">
                 <img class="product-card-img" src="images/hotel-3.jpg" width="300" height="212" alt="Горы на фоне голубого неба">
               </a>
-              <a class="product-card-link" href="#">
+              <a class="product-card-link" href="#" tabindex="-1">
                 <h3 class="product-card-title">Desert Quail Inn</h3>
               </a>
               <p class="product-card-type">Гостиница</p>
@@ -215,16 +233,16 @@
                 <li class="star active"></li>
                 <li class="star active"></li>
                 <li class="star active"></li>
-                <li class="star"></li>
-                <li class="star"></li>
+                <li class="star visually-hidden"></li>
+                <li class="star visually-hidden"></li>
               </ul>
               <p class="product-card-rating">Рейтинг: <span class="rating">6,9</span></p>
             </li>
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link" href="#" tabindex="-1">
                 <img class="product-card-img" src="images/hotel-4.jpg" width="300" height="212" alt="Горы на фоне звёздного неба">
               </a>
-              <a class="product-card-link" href="#">
+              <a class="product-card-link" href="#" tabindex="-1">
                 <h3 class="product-card-title">GreenTree Inn</h3>
               </a>
               <p class="product-card-type">Гостиница</p>
@@ -234,9 +252,9 @@
               <ul class="product-card-stars">
                 <li class="star active"></li>
                 <li class="star active"></li>
-                <li class="star"></li>
-                <li class="star"></li>
-                <li class="star"></li>
+                <li class="star visually-hidden"></li>
+                <li class="star visually-hidden"></li>
+                <li class="star visually-hidden"></li>
               </ul>
               <p class="product-card-rating">Рейтинг: <span class="rating">5,0</span></p>
             </li>
@@ -269,7 +287,7 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="subscribe-form-name">
               <label class="visually-hidden" for="user-email">Ваш e-mail</label>
-              <input type="email" id="user-email" name="user-email" placeholder="Ваш e-mail">
+              <input class="subscribe-email" type="email" id="user-email" name="user-email" placeholder="Ваш e-mail">
             </p>
             <button class="button subscribe-button" type="submit">Подписаться</button>
           </form>
