@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Седона. Городок в Аризоне</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
     <div class="page-container">
@@ -107,19 +109,19 @@
             <li class="infrastructure-item infrastructure-item-medium">
               <div class="infrastructure-wrapper">
                 <h3 class="infrastructure-title">Жильё</h3>
-                <p class="infrastructure-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="infrastructure-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
               </div>
               </li>
             <li class="infrastructure-item">
               <div class="infrastructure-wrapper">
                 <h3 class="infrastructure-title">Еда</h3>
-                <p class="infrastructure-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                <p class="infrastructure-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
               </div>
             </li>
             <li class="infrastructure-item infrastructure-item-medium">
               <div class="infrastructure-wrapper">
                 <h3 class="infrastructure-title">Сувениры</h3>
-                <p class="infrastructure-description">Не только китайского, но и настоящего местного производства!</p>
+                <p class="infrastructure-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
               </div>
             </li>
           </ul>
@@ -127,13 +129,13 @@
         <section class="search" data-test="search">
           <div class="search-wrapper">
             <h2 class="search-title">Заинтересовались?</h2>
-          <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="search-button" href="catalog.html">Поиск гостиницы в седоне</a>
           </div>
         </section>
         <section class="subscribe subscribe-main" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="subscribe-form-name">
               <label class="visually-hidden" for="user-email">Ваш e-mail</label>
@@ -180,6 +182,77 @@
           </a>
         </div>
       </footer>
+    </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-button-close">
+          <span class="visually-hidden">Закрыть</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#000" d="M17.49 4.783 16.198 3.49l-5.707 5.707-5.708-5.707L3.49 4.783l5.708 5.708-5.708 5.707 1.293 1.293 5.708-5.708 5.707 5.708 1.293-1.293-5.708-5.707 5.708-5.708Z"/></svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="field-group">
+              <legend class="visually-hidden">Дата заезда</legend>
+              <label class="field-group-label" for="label-arrival">
+                <span class="input-label">Дата заезда:</span>
+                <span class="input-icon"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" fill="none" viewBox="0 0 17 15"><path fill="#000" d="M6.143 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/><path fill="#000" d="M15.393 2h-2V0h-1v2h-8V0h-1v2h-2c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12h-14V7h14v7Zm-14-8V3h2v2h1V3h8v2h1V3h2v3h-14Z"/><path fill="#000" d="M8.393 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM10.643 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM6.143 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.893 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM3.893 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8.393 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.643 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.893 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.893 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg></span>
+                <input class="field-booking-date" name="arrival date" type="text" id="label-arrival" value="27 апреля 2020" placeholder="Укажите дату" required>
+              </label>
+              <span class="warning-input message-error">Мы не можем отправить вас в прошлое.</span>
+            </fieldset>
+            <fieldset class="field-group">
+              <legend class="visually-hidden">Дата выезда</legend>
+              <label class="field-group-label" for="label-departure">
+                <span class="input-label">Дата выезда:</span>
+                <span class="input-icon"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" fill="none" viewBox="0 0 17 15"><path fill="#000" d="M6.143 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/><path fill="#000" d="M15.393 2h-2V0h-1v2h-8V0h-1v2h-2c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12h-14V7h14v7Zm-14-8V3h2v2h1V3h8v2h1V3h2v3h-14Z"/><path fill="#000" d="M8.393 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM10.643 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM6.143 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.893 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM3.893 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8.393 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.643 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.893 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.893 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg></span>
+                <input class="field-booking-date" name="date departure" type="text" id="label-departure" value="1 сентября 2023" placeholder="Укажите дату" required>
+              </label>
+              <span class="warning-input message">На эти даты есть свободные номера. Пока есть.</span>
+            </fieldset>
+            <div class="quantity-human-wraper">
+              <fieldset class="field-group">
+                <legend class="visually-hidden">Количество взрослых</legend>
+                <label class="number-adults-label" for="adults-quantity">
+                  <span class="adults-label">Взрослые:</span>
+                  <input class="number-adults" type="number" id="adults-quantity" value="2">
+                </label>
+                <button class="button-minus" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path class="minus-icon" d="M3.393 9v2h14V9h-14Z"/></svg>
+                </button>
+                <button class="button-plus" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><path class="pluse-icon" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
+                </button>
+              </fieldset>
+              <fieldset class="field-group">
+                <legend class="visually-hidden">Количество детей</legend>
+                <div class="number-children-label">
+                  <label for="children-quantity"></label>
+                  <span class="children-label form-label-icon">Дети:
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                        <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none" viewBox="0 0 2 12"><path fill="#fff" fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd"/></svg>
+                      </button>
+                      <span class="tooltip-text">
+                        <span class="tooltip-figure" role="tooltip" id="tooltip-label-date"></span>
+                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                      </span>
+                    </span>
+                  </span>
+                  <input class="number-children" type="number" id="children-quantity" value="2">
+                </div>
+                  <button class="button-minus" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path class="minus-icon" d="M3.393 9v2h14V9h-14Z"/></svg>
+                  </button>
+                  <button class="button-plus" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><path class="pluse-icon" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
+                  </button>
+              </fieldset>
+            </div>
+            <button class="submit-search-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
