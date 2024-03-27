@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
-* Студент: [Sergey Veldyatskikh](https://up.htmlacademy.ru/htmlcss/39/user/2106113).
-* Наставник: `Неизвестно`.
+- Студент: [Sergey Veldyatskikh](https://up.htmlacademy.ru/htmlcss/39/user/2106113).
+- Наставник: [Владислав Ермолаев](https://htmlacademy.ru/profile/id128353).
+- Сайт: [Седона](https://veldyatskikh.github.io/2106113-sedona-39/).
 
 ---
 
