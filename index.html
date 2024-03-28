@@ -56,7 +56,7 @@
       <main class="main-container" data-test="main">
         <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Седона — городок в Аризоне</h1>
-          <img class="hero-img" src="images/welcome.png" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+          <img class="hero-img" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
         </section>
         <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
@@ -91,11 +91,11 @@
               </div>
             </li>
             <li class="advantages-item  advantages-item-hight">
+              <img class="advantages-img" src="images/photo-2.jpg" width="800" height="385" alt="Каньон, лес и горы">
               <div class="advantages-wraper">
                 <h3 class="advantages-title">Там есть мост дьявола</h3>
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-              <img class="advantages-img" src="images/photo-2.jpg" width="800" height="385" alt="Каньон, лес и горы">
             </li>
           </ul>
         </section>
@@ -106,20 +106,20 @@
             <p class="infrastructure-text">Опытный персонал и качественное обслуживание!</p>
           </div>
           <ul class="infrastructure-list">
-            <li class="infrastructure-item infrastructure-item-medium">
-              <div class="infrastructure-wrapper">
+            <li class="infrastructure-item">
+              <div class="infrastructure-wrapper infrastructure-wrapper-house">
                 <h3 class="infrastructure-title">Жильё</h3>
                 <p class="infrastructure-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
               </div>
               </li>
             <li class="infrastructure-item">
-              <div class="infrastructure-wrapper">
+              <div class="infrastructure-wrapper infrastructure-wrapper-food">
                 <h3 class="infrastructure-title">Еда</h3>
                 <p class="infrastructure-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
               </div>
             </li>
-            <li class="infrastructure-item infrastructure-item-medium">
-              <div class="infrastructure-wrapper">
+            <li class="infrastructure-item">
+              <div class="infrastructure-wrapper infrastructure-wrapper-souvenir">
                 <h3 class="infrastructure-title">Сувениры</h3>
                 <p class="infrastructure-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
               </div>
@@ -129,8 +129,8 @@
         <section class="search" data-test="search">
           <div class="search-wrapper">
             <h2 class="search-title">Заинтересовались?</h2>
-          <p class="search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="search-button" href="catalog.html">Поиск гостиницы в седоне</a>
+            <p class="search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <a class="search-button" href="catalog.html">Поиск гостиницы в седоне</a>
           </div>
         </section>
         <section class="subscribe subscribe-main" data-test="subscribe">
@@ -185,7 +185,7 @@
     </div>
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-button-close">
+        <button class="modal-button-close" type="button">
           <span class="visually-hidden">Закрыть</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#000" d="M17.49 4.783 16.198 3.49l-5.707 5.707-5.708-5.707L3.49 4.783l5.708 5.708-5.708 5.707 1.293 1.293 5.708-5.708 5.707 5.708 1.293-1.293-5.708-5.707 5.708-5.708Z"/></svg>
         </button>
@@ -215,12 +215,14 @@
                 <legend class="visually-hidden">Количество взрослых</legend>
                 <label class="number-adults-label" for="adults-quantity">
                   <span class="adults-label">Взрослые:</span>
-                  <input class="number-adults" type="number" id="adults-quantity" value="2">
+                  <input class="number-adults" type="number" name="quantity-adults" id="adults-quantity" value="2">
                 </label>
                 <button class="button-minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество взрослых на одну единицу</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path class="minus-icon" d="M3.393 9v2h14V9h-14Z"/></svg>
                 </button>
                 <button class="button-plus" type="button">
+                  <span class="visually-hidden">Увеличить количество взрослых на одну единицу</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><path class="pluse-icon" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
                 </button>
               </fieldset>
@@ -239,12 +241,14 @@
                       </span>
                     </span>
                   </span>
-                  <input class="number-children" type="number" id="children-quantity" value="2">
+                  <input class="number-children" type="number" name="quantity-children" id="children-quantity" value="2">
                 </div>
                   <button class="button-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество детей на одну единицу</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path class="minus-icon" d="M3.393 9v2h14V9h-14Z"/></svg>
                   </button>
                   <button class="button-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество взрослых на одну единицу</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><path class="pluse-icon" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
                   </button>
               </fieldset>
